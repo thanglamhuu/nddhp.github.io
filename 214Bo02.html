@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        .wrapper {
+            border: 2px solid #4E60EE;
+            /* border-radius: 5px; */
+            margin: 0.2em 0.2em;
+        }
+
+        .chuHan {
+            color: #fff;
+            background-color: #4E60EE;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 1;
+            font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+            text-align: center;
+        }
+
+        .chuHanBig {
+            color: #000;
+            background-color: #fff;
+            font-size: 140px;
+            font-weight: 400;
+            line-height: 1;
+            font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function openModal(word){
+            $("#word").text( word);
+            $("#myModal").modal();
+        }
+    </script>
+<body>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body col-centered">
+                        <span id="word" class="chuHanBig"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- <div class="col-sm-6"></div> -->
+        <div class="col-sm-5 table-responsive">  
+            <table class="wrapper table">
+                <tr><td>STT</td><td>Âm Hán Việt</td><td>Chữ Hán</td><td>Ví dụ</td><td>Số nét</td></tr>
+                <tr><td>53</td><td>Bì = da</td><td><button class="btn btn-sm chuHan" onclick="openModal('皮')">皮</button></td><td>皯、皰、皴</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_107">5</a></td></tr>
+                <tr><td>54</td><td>Nhục = thịt</td><td><button class="btn btn-sm chuHan" onclick="openModal('肉')">肉,月</button></td><td>肊、肋、肌</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_130">6</a></td></tr>
+                <tr><td>55</td><td>Yêu = Ít</td><td><button class="btn btn-sm chuHan" onclick="openModal('幺')">幺</button></td><td>幻、幼、幽</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_52">3</a></td></tr>
+                <tr><td>56</td><td>Đầu = đầu</td><td><button class="btn btn-sm chuHan" onclick="openModal('亠')">亠</button></td><td>亡、亢、交</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_8">2</a></td></tr>
+                <tr><td>57</td><td>Truy = sau</td><td><button class="btn btn-sm chuHan" onclick="openModal('夊')">夊</button></td><td>夌、复、夏</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_35">3</a></td></tr>
+                <tr><td>58</td><td>Chỉ = chậm</td><td><button class="btn btn-sm chuHan" onclick="openModal('夂')">夂</button></td><td>夃、夅、夆</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_34">3</a></td></tr>
+                <tr><td>59</td><td>Tường = tấm</td><td><button class="btn btn-sm chuHan" onclick="openModal('爿')">爿</button></td><td>牀、牁、牂</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_90">4</a></td></tr>
+                <tr><td>60</td><td>Thất = chân </td><td><button class="btn btn-sm chuHan" onclick="openModal('疋')">疋</button></td><td>疌、疏、疎</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_103">5</a></td></tr>
+                <tr><td>61</td><td>Thi = thây</td><td><button class="btn btn-sm chuHan" onclick="openModal('尸')">尸</button></td><td>尺、尼、尻</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_44">3</a></td></tr>
+                <tr><td>62</td><td>Trảo = vuốt</td><td><button class="btn btn-sm chuHan" onclick="openModal('爪')">爪,爫</button></td><td>爬、爭、爰</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_87">4</a></td></tr>
+                <tr><td>63</td><td>Thử = chuột</td><td><button class="btn btn-sm chuHan" onclick="openModal('鼠')">鼠</button></td><td>鼢、鼥、鼩</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_208">13</a></td></tr>
+                <tr><td>64</td><td>Quy = rùa</td><td><button class="btn btn-sm chuHan" onclick="openModal('龜')">龜</button></td><td>䶰、龝、龞</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_213">16</a></td></tr>
+                <tr><td>65</td><td>Đấu = tranh</td><td><button class="btn btn-sm chuHan" onclick="openModal('鬥')">鬥</button></td><td>鬦、鬧、鬨</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_191">10</a></td></tr>
+                <tr><td>66</td><td>phộc = đánh</td><td><button class="btn btn-sm chuHan" onclick="openModal('攴')">攴,攵</button></td><td>收、攷、攸</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_66">4</a></td></tr>
+                <tr><td>67</td><td>Vũ = cánh</td><td><button class="btn btn-sm chuHan" onclick="openModal('羽')">羽</button></td><td>羿、翀、翁</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_124">6</a></td></tr>
+                <tr><td>68</td><td>Mao = lông</td><td><button class="btn btn-sm chuHan" onclick="openModal('毛')">毛</button></td><td>毡、毣、毧</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_82">4</a></td></tr>
+                <tr><td>69</td><td>Long = rồng</td><td><button class="btn btn-sm chuHan" onclick="openModal('龍')">龍</button></td><td>龏、龑、龔</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_212">16</a></td></tr>
+                <tr><td>70</td><td>Qủy = qủy</td><td><button class="btn btn-sm chuHan" onclick="openModal('鬼')">鬼</button></td><td>鬾、魁、魂</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_194">10</a></td></tr>
+                <tr><td>71</td><td>Khí = khí</td><td><button class="btn btn-sm chuHan" onclick="openModal('气')">气</button></td><td>氕、氘、氚</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_84">4</a></td></tr>
+                <tr><td>72</td><td>Sắc = màu</td><td><button class="btn btn-sm chuHan" onclick="openModal('色')">色</button></td><td>艳、艴、艵</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_139">6</a></td></tr>
+                <tr><td>73</td><td>Trỉ = sâu</td><td><button class="btn btn-sm chuHan" onclick="openModal('豸')">豸</button></td><td>豺、豻、豹</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_153">7</a></td></tr>
+                <tr><td>74</td><td>Cửu = hẹ</td><td><button class="btn btn-sm chuHan" onclick="openModal('韭')">韭</button></td><td>韰、韲、䪢</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_179">9</a></td></tr>
+                <tr><td>75</td><td>Kỷ = ghế</td><td><button class="btn btn-sm chuHan" onclick="openModal('几')">几</button></td><td>凪、凰、凱</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_16">2</a></td></tr>
+                <tr><td>76</td><td>Mộc = cây</td><td><button class="btn btn-sm chuHan" onclick="openModal('木')">木</button></td><td>未、末、本</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_75">4</a></td></tr>
+                <tr><td>77</td><td>Tề = tày</td><td><button class="btn btn-sm chuHan" onclick="openModal('齊')">齊</button></td><td>齋、齌、齍</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_210">14</a></td></tr>
+                <tr><td>78</td><td>Tỉ = ví</td><td><button class="btn btn-sm chuHan" onclick="openModal('比')">比</button></td><td>毖、毗、毘</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_81">4</a></td></tr>
+                <tr><td>79</td><td>Bối = quí</td><td><button class="btn btn-sm chuHan" onclick="openModal('貝')">貝</button></td><td>貞、負、財</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_154">7</a></td></tr>
+                <tr><td>80</td><td>Hoàng = vàng</td><td><button class="btn btn-sm chuHan" onclick="openModal('黃')">黃</button></td><td>黈、䵍、黌</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_201">12</a></td></tr>
+                <tr><td>81</td><td>Thiên = ngàn</td><td><button class="btn btn-sm chuHan" onclick="openModal('千')">千</button></td><td>开、平、年</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_51">3</a></td></tr>
+                <tr><td>82</td><td>Nhất = một</td><td><button class="btn btn-sm chuHan" onclick="openModal('一')">一</button></td><td>丁、七、三</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_1">1</a></td></tr>
+                <tr><td>83</td><td>Cam = ngọt</td><td><button class="btn btn-sm chuHan" onclick="openModal('甘')">甘</button></td><td>甚、甜、甛</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_99">5</a></td></tr>
+                <tr><td>84</td><td>Tân = cay</td><td><button class="btn btn-sm chuHan" onclick="openModal('辛')">辛</button></td><td>辜、辝、辟</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_160">7</a></td></tr>
+                <tr><td>85</td><td>Nhật = ngày</td><td><button class="btn btn-sm chuHan" onclick="openModal('日')">日</button></td><td>旦、旨、早</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_72">4</a></td></tr>
+                <tr><td>86</td><td>Tịch = tối</td><td><button class="btn btn-sm chuHan" onclick="openModal('夕')">夕</button></td><td>外、夗、多</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_36">3</a></td></tr>
+                <tr><td>87</td><td>Lỗ = muối</td><td><button class="btn btn-sm chuHan" onclick="openModal('鹵')">鹵</button></td><td>鹹、鹺、鹼</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_197">11</a></td></tr>
+                <tr><td>88</td><td>Thực = ăn</td><td><button class="btn btn-sm chuHan" onclick="openModal('食')">食</button></td><td>飡、飢、飣</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_184">9</a></td></tr>
+                <tr><td>89</td><td>Cân = khăn</td><td><button class="btn btn-sm chuHan" onclick="openModal('巾')">巾</button></td><td>巿、帀、市</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_50">3</a></td></tr>
+                <tr><td>90</td><td>Y = áo</td><td><button class="btn btn-sm chuHan" onclick="openModal('衣')">衣,衤</button></td><td>初、表、衫</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_145">6</a></td></tr>
+                <tr><td>91</td><td>Mâu = giáo</td><td><button class="btn btn-sm chuHan" onclick="openModal('矛')">矛</button></td><td>矜、矞、矟</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_110">5</a></td></tr>
+                <tr><td>92</td><td>Đao = dao</td><td><button class="btn btn-sm chuHan" onclick="openModal('刀')">刀,刂</button></td><td>刁、刃、分</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_18">2</a></td></tr>
+                <tr><td>93</td><td>Vi = rào</td><td><button class="btn btn-sm chuHan" onclick="openModal('囗')">囗</button></td><td>囚、四、囝</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_31">3</a></td></tr>
+            </table>
+        </div>
+        <div class="col-sm-5 table-responsive">  
+            <table class="wrapper table">
+                    <tr><td>STT</td><td>Âm Hán Việt</td><td>Chữ Hán</td><td>Ví dụ</td><td>Số nét</td></tr>
+                    <tr><td>94</td><td>Thổ = đất</td><td><button class="btn btn-sm chuHan" onclick="openModal('土')">土</button></td><td>圠、圣、圭</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_32">3</a></td></tr>
+                    <tr><td>95</td><td>Thốn = tất</td><td><button class="btn btn-sm chuHan" onclick="openModal('寸')">寸</button></td><td>寺、封、射</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_41">3</a></td></tr>
+                    <tr><td>96</td><td>Nhập = vào</td><td><button class="btn btn-sm chuHan" onclick="openModal('入')">入</button></td><td>內、全、兩</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_11">2</a></td></tr>
+                    <tr><td>97</td><td>Củng = vào</td><td><button class="btn btn-sm chuHan" onclick="openModal('廾')">廾</button></td><td>廿、弁、弄</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_55">3</a></td></tr>
+                    <tr><td>98</td><td>Bốc = bói</td><td><button class="btn btn-sm chuHan" onclick="openModal('卜')">卜</button></td><td>卞、占、卡</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_25">2</a></td></tr>
+                    <tr><td>99</td><td>Ngõa = ngói</td><td><button class="btn btn-sm chuHan" onclick="openModal('瓦')">瓦</button></td><td>㼚、瓮、瓫</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_98">5</a></td></tr>
+                    <tr><td>100</td><td>Chu = ghe</td><td><button class="btn btn-sm chuHan" onclick="openModal('舟')">舟</button></td><td>舠、舡、舢</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_137">6</a></td></tr>
+                    <tr><td>101</td><td>Xa = xe</td><td><button class="btn btn-sm chuHan" onclick="openModal('車')">車</button></td><td>軋、軌、軍</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_159">7</a></td></tr>
+                    <tr><td>102</td><td>Mã = ngựa</td><td><button class="btn btn-sm chuHan" onclick="openModal('馬')">馬</button></td><td>馭、馮、馯</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_187">10</a></td></tr>
+                    <tr><td>103</td><td>Hỏa = lửa</td><td><button class="btn btn-sm chuHan" onclick="openModal('火')">火,灬</button></td><td>灰、灯、灶</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_86">4</a></td></tr>
+                    <tr><td>104</td><td>Nguyệt = trăng</td><td><button class="btn btn-sm chuHan" onclick="openModal('月')">月</button></td><td>有、朋、服</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_74">4</a></td></tr>
+                    <tr><td>105</td><td>Nha = răng</td><td><button class="btn btn-sm chuHan" onclick="openModal('牙')">牙</button></td><td>㸦、㸧、牚</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_92">4</a></td></tr>
+                    <tr><td>106</td><td>Khẩu = miệng</td><td><button class="btn btn-sm chuHan" onclick="openModal('口')">口</button></td><td>叱、古、只</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_30">3</a></td></tr>
+                    <tr><td>107</td><td>Đãi = lệ</td><td><button class="btn btn-sm chuHan" onclick="openModal('隶')">隶</button></td><td>𨽻、隷、隸</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_171">8</a></td></tr>
+                    <tr><td>108</td><td>Bát = đi</td><td><button class="btn btn-sm chuHan" onclick="openModal('癶')">癶</button></td><td>癸、癹、発</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_105">5</a></td></tr>
+                    <tr><td>109</td><td>Thử = kê</td><td><button class="btn btn-sm chuHan" onclick="openModal('黍')">黍</button></td><td>黎、黏、黐</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_202">12</a></td></tr>
+                    <tr><td>110</td><td>Hòa = lúa</td><td><button class="btn btn-sm chuHan" onclick="openModal('禾')">禾</button></td><td>禿、秀、私</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_115">5</a></td></tr>
+                    <tr><td>111</td><td>Thảo = cỏ</td><td><button class="btn btn-sm chuHan" onclick="openModal('艸')">艸,艹</button></td><td>艽、艾、芃</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_140">6</a></td></tr>
+                    <tr><td>112</td><td>Trúc = tre</td><td><button class="btn btn-sm chuHan" onclick="openModal('竹')">竹,⺮</button></td><td>竺、竽、竿</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_118">6</a></td></tr>
+                    <tr><td>113</td><td>Dương = dê</td><td><button class="btn btn-sm chuHan" onclick="openModal('羊')">羊</button></td><td>羋、羌、美</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_123">6</a></td></tr>
+                    <tr><td>114</td><td>Ngư = cá</td><td><button class="btn btn-sm chuHan" onclick="openModal('魚')">魚</button></td><td>魟、魠、魦</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_195">11</a></td></tr>
+                    <tr><td>115</td><td>Thạch = đá</td><td><button class="btn btn-sm chuHan" onclick="openModal('石')">石</button></td><td>矸、矻、矼</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_112">5</a></td></tr>
+                    <tr><td>116</td><td>Á = che</td><td><button class="btn btn-sm chuHan" onclick="openModal('襾')">襾</button></td><td>西、要、覂</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_146">6</a></td></tr>
+                    <tr><td>117</td><td>Uông = què</td><td><button class="btn btn-sm chuHan" onclick="openModal('尢')">尢</button></td><td>尤、尥、尨</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_43">3</a></td></tr>
+                    <tr><td>118</td><td>Ất = vậy</td><td><button class="btn btn-sm chuHan" onclick="openModal('乙')">乙</button></td><td>九、乞、也</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_5">1</a></td></tr>
+                    <tr><td>119</td><td>Tẩu = chạy</td><td><button class="btn btn-sm chuHan" onclick="openModal('走')">走</button></td><td>赳、赴、赶</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_156">7</a></td></tr>
+                    <tr><td>120</td><td>Phi = bay</td><td><button class="btn btn-sm chuHan" onclick="openModal('飛')">飛</button></td><td>䬡、飜、飝</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_183">9</a></td></tr>
+                    <tr><td>121</td><td>Thủ = tay</td><td><button class="btn btn-sm chuHan" onclick="openModal('手')">手,扌</button></td><td>才、扎、扐</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_64">4</a></td></tr>
+                    <tr><td>122</td><td>Diện = mặt</td><td><button class="btn btn-sm chuHan" onclick="openModal('面')">面</button></td><td>靤、靦、靧</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_176">9</a></td></tr>
+                    <tr><td>123</td><td>Mục = mắt</td><td><button class="btn btn-sm chuHan" onclick="openModal('目')">目</button></td><td>盯、盱、盲</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_109">5</a></td></tr>
+                    <tr><td>124</td><td>Thủ = đầu</td><td><button class="btn btn-sm chuHan" onclick="openModal('首')">首</button></td><td>馗、䭫、馘</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_185">9</a></td></tr>
+                    <tr><td>125</td><td>Trùng = sâu</td><td><button class="btn btn-sm chuHan" onclick="openModal('虫')">虫</button></td><td>虬、虯、虱</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_142">6</a></td></tr>
+                    <tr><td>126</td><td>Mãnh = ếch</td><td><button class="btn btn-sm chuHan" onclick="openModal('黽')">黽</button></td><td>黿、鼀、鼁</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_205">13</a></td></tr>
+                    <tr><td>127</td><td>Tiêu = tóc</td><td><button class="btn btn-sm chuHan" onclick="openModal('髟')">髟</button></td><td>髠、髡、髢</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_190">10</a></td></tr>
+                    <tr><td>128</td><td>Hiệt = đầu</td><td><button class="btn btn-sm chuHan" onclick="openModal('頁')">頁</button></td><td>頂、頃、頄</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_181">9</a></td></tr>
+                    <tr><td>129</td><td>Ngưu = trâu</td><td><button class="btn btn-sm chuHan" onclick="openModal('牛')">牛</button></td><td>牝、牟、牠</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_93">4</a></td></tr>
+                    <tr><td>130</td><td>Hổ = cọp, hùm</td><td><button class="btn btn-sm chuHan" onclick="openModal('虍')">虍,虎</button></td><td>虎、虐、虒</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_141">6</a></td></tr>
+                    <tr><td>131</td><td>Nghiễm = chóp</td><td><button class="btn btn-sm chuHan" onclick="openModal('广')">广</button></td><td>庀、庂、庄</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_53">3</a></td></tr>
+                    <tr><td>132</td><td>Cao = cao</td><td><button class="btn btn-sm chuHan" onclick="openModal('高')">高</button></td><td>髚、髛、𩫛</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_189">10</a></td></tr>
+                    <tr><td>133</td><td>Bao = Bọc</td><td><button class="btn btn-sm chuHan" onclick="openModal('勹')">勹</button></td><td>勺、勻、勾</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_20">2</a></td></tr>
+                    <tr><td>134</td><td>Cách = Lột</td><td><button class="btn btn-sm chuHan" onclick="openModal('革')">革</button></td><td>靭、靮、靳</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_177">9</a></td></tr>
+                </table>
+        </div>        
+    </div>
+</body></html>
+<!-- <tr><td>81</td><td>Thiên = ngàn</td><td>千</td><td></td><td>3</td></tr> -->
+<!-- <tr><td>81</td><td>Thiên = ngàn</td><td><button class="btn btn-sm chuHan" onclick="openModal('千')">千</button></td><td>开、平、年</td><td><a href="https://en.m.wikipedia.org/wiki/Radical_51">3</a></td></tr> -->
